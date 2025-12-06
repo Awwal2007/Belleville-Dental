@@ -92,6 +92,10 @@ header nav ul .education:hover .hover-item{
   display: block;
 }
 
+.burger{
+  display: none !important;
+}
+
 header .contact{
   color: white;
   background-color: #1381EC;
@@ -328,8 +332,64 @@ footer .copywright{
   font-family: 'Poppins', sans-serif;
 }
 
+@media (max-width: 1024px) {
+  section{
+    padding: 20px 40px;
+  }
+  .hero .right {
+    display: none;
+  }
+  .hero .left{
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .section1{
+    flex-direction: column-reverse;
+    row-gap: 80px;
+  }
+  .section2 .card-container{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .section2 .card-container .card{
+    border-radius: 20px;
+    text-align: center;
+  }
+}
 
-
-@media (max-width:768px) {
+@media (max-width:860px) {
+  section{
+    padding: 20px 20px;
+  }
+  .burger{
+    display: block !important;
+  }
   
+  .nav{
+    display: none;
+  }
+  header nav ul{
+    flex-direction: column;
+    position: absolute;
+    z-index: 1000;
+    background-color: white;
+    padding: 30px;
+    right: 10px;
+    top: 100px;
+  }
+
+  header nav ul li{
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  footer .footer-container {
+    flex-wrap: wrap;
+  }
+  footer .footer-container .footer-logo{
+    max-width: 100% !important;
+  }
 }

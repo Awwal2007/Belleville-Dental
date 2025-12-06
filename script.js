@@ -1,5 +1,7 @@
 const accordion = document.querySelectorAll(".accordion");
 const accordionItem = document.querySelectorAll(".accordion-item");
+const armBurger = document.querySelector(".fa-bars")
+const nav = document.getElementById("nav")
 
 
 accordion.forEach((acc, i) => {
@@ -30,3 +32,7 @@ accordion.forEach((acc, i) => {
 
     };
 });
+
+armBurger.onclick = () =>{
+    nav.classList.toggle('nav')
+}
