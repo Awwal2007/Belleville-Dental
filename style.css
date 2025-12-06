@@ -363,6 +363,9 @@ footer .copywright{
   section{
     padding: 20px 20px;
   }
+  footer .footer-container{
+    padding: 20px 20px;
+  }
   .burger{
     display: block !important;
   }
