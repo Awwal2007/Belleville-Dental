@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product - Belleville Dental</title>
     <link rel="stylesheet" href="patient-education.css">
-    <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -15,27 +14,26 @@
                 <img src="images/Group 5834.png" alt="">
             </a>
         </div>
-        <nav>
+        <nav class="nav" id="nav">
             <ul>
                 <a href="index.html"><li>Home</li></a>
                 <a href="about.html"><li>About Us</li></a>
                 <a href="product.html"><li>Products</li></a>
                 <a href="gallery.html"><li>Gallery</li></a>
                 <div class="education">
-                    <li>Education</li>
+                    <li>Education <i class="fa-solid fa-angle-down"></i></li>
                     <ul class="hover-item">
-                        <li><a href="patient-education.html">Patient Education</a></li>
-                        <li><a href="professional-education.html">Professional Education</a></li>
+                        <a class="navActive" href="patient-education.html"> <li>Patient Education </li></a>
+                        <a href="professional-education.html"> <li>Professional Education</li></a>
                     </ul>
                 </div>
                 <a href="research.html"><li>Research</li></a>
             </ul>
         </nav>
-        <div class="contact">
-            <a href="contact.html">
-                Contact
-            </a>
-        </div>
+        <a href="contact.html" class="contact">
+            Contact
+        </a>
+        <i class="fa-solid fa-bars burger"></i>
     </header>
 
     <section class="hero">
@@ -127,5 +125,6 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
