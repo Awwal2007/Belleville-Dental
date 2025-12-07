@@ -158,24 +158,26 @@ header .contact:hover{
   box-shadow: 
     0 6px 12px rgba(0, 0, 0, 0.15),
     0 12px 24px rgba(0, 0, 0, 0.12);
-
+  width: 600px;
 }
 
 .hero .filter-container .filter-by{
   font-weight: 700;
   font-size: .8rem;
+  margin-bottom: 20px;
 }
 .hero .filter-container .filter{
   display: flex;
   gap: 20px ;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
-.hero .filter-container .filter input,select{
+.hero .filter-container .filter input, select{
   border: none;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
-  width: 250px;
+  width: 180px;
   height: 35px;
   border-radius: 8px;
   padding: 2px 10px;
@@ -215,6 +217,7 @@ header .contact:hover{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
+    width: 100%;
 }
 .items-section .grid-item{
     width: 100%;
@@ -225,7 +228,7 @@ header .contact:hover{
     text-align: center;
 }
 .items-section .grid-item img{
-  width: 300px !important;
+  width: 300px;
   height: 300px !important;
   margin-bottom: 10px;
   border-radius: 100%;
@@ -338,13 +341,32 @@ footer .copywright{
   }
   .hero .filter-container .filter{
     flex-wrap: wrap;
+    gap: 10px;
   }
+  .hero .filter-container .filter select option{
+    font-size: 12px;
+    width: 100px;
+  }
+  
 }
 
 @media (max-width: 768px) {
+  .hero h1{
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
   .items-section{
     grid-template-columns: 1fr;
   }
+  .hero .filter-container{
+    width: 70%;
+    padding: 14px 44px;
+
+  }
+  .hero .filter-container .filter .filter-icon{
+    width: 100%;
+  }
+  
   footer .footer-container {
     flex-wrap: wrap;
   }
