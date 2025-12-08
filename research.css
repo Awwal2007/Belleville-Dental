@@ -88,6 +88,8 @@ header nav ul .education{
 header nav ul .education .hover-item{
   display: none;
   background-color: white;
+  box-shadow: 0px 1px 3px  rgba(120, 120, 120, 0.683);
+  border-radius: 10px;
   padding: 10px 15px;
   width: auto;
   position: absolute;

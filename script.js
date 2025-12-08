@@ -30,9 +30,17 @@ accordion.forEach((acc, i) => {
 
         });
 
+        
+
     };
 });
 
 armBurger.onclick = () =>{
     nav.classList.toggle('nav')
 }
+
+document.addEventListener("click", (e)=>{
+    if(!armBurger.contains(e.target) && !nav.contains(e.target)){
+        nav.classList.add("nav")
+    }
+})
