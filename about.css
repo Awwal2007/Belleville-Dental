@@ -196,10 +196,13 @@ header .contact:hover{
 }
 .section2 .card-container .card:hover{
   background-color: #1381EC;
-  border: none;
   color: white;
   scale: 1.1;
   border-radius: 16px;
+  z-index: 999;
+  border: 1px solid white;
+  padding: 50px 40px;
+  box-shadow: 0px 1px 5px  rgba(120, 120, 120, 0.683);
 }
 .section2 .card-container .card-hover{
   background-color: #1381EC;
